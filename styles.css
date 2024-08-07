@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    /* row / column*/
+    grid-template: 150px 1fr / 300px 3fr;
+    height:100vh;
+    width: 100vw;
+}
+
+*{
+    margin: 0;
+}
+
+.header{
+    background-color: lightcoral;
+    display: grid;
+    grid-template-rows: 1fr / 1.5fr;
+
+}
+
+.dashboard{
+    background-color:lightblue;
+    grid-row: 1 / 3 ;
+
+}
+
+.main{
+    background-color: peru;
+}
