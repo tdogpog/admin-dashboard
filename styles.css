@@ -3,9 +3,10 @@ body{
     box-sizing: border-box;
     display: grid;
     /* row / column*/
-    grid-template: 150px 1fr / 300px 3fr;
+    grid-template: 170px 1fr / 300px 3fr;
     height:100vh;
     width: 100vw;
+    font-family: "Roboto",'Times New Roman', Times, serif;
 }
 
 *{
@@ -13,10 +14,95 @@ body{
 }
 
 .header{
-    background-color: lightcoral;
+    background-color: #f8fcff;
     display: grid;
-    grid-template-rows: 1fr / 1.5fr;
+    grid-template-rows: 3fr 1.5fr;
+    padding: 10px 30px;
+    gap: 15px;
+}
 
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+svg{
+    height:1.5rem
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    border-radius: 12px;
+    width: max(200px,30vw);
+    height: 25px;
+    margin-left: 8px;
+    border-style: none;
+    background-color: lightgrey;
+    padding-left: 6px;
+
+}
+
+.user-notifs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+}
+
+#username{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-info{
+    display: flex;
+    gap: 10px;
+}
+
+.profile-picture{
+    border-radius: 50%;
+    height: 4em;
+    width: 4em;
+    object-fit: cover;
+}
+
+.intro-text{
+    font-size: small;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.intro-span{
+    font-size: 1.8em;
+}
+
+.new-upload-share{
+    display: flex;
+    align-content: center;
+}
+
+button{
+    font-weight: bold;
+    width: 90px;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    border: solid #0ea5e9 .5px;
+    background: #0284c7;
+    border-radius: 60px;
+    
 }
 
 .dashboard{
