@@ -60,6 +60,7 @@ input{
 #username{
     font-size: 20px;
     font-weight: bold;
+    color: black;
 }
 
 .bottom-header{
@@ -84,10 +85,12 @@ input{
     font-size: small;
     font-weight: bold;
     line-height: 1.5;
+    color: black;
 }
 
 .intro-span{
     font-size: 1.8em;
+    color: black;
 }
 
 .new-upload-share{
@@ -181,10 +184,10 @@ button{
 .body-cards{
     background-color: #f8fcff;
     border-radius: 10px;
+    box-shadow: 1px 2px 4px rgb(190, 203, 212);
     display: grid;
     grid-template: 1fr 50px / 10px 1fr;
-    box-shadow: 1px 2px 4px rgb(190, 203, 212);
-
+    padding-right: 10px;
 }
 
 .card-text{
@@ -211,4 +214,48 @@ button{
 
 .trending-container{
     grid-column: 2;
+}
+
+.announcement-container{
+    background-color: #f8fcff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgb(190, 203, 212);
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+p{
+    color: grey;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #d1d5db;
+    margin: 0;
+}
+
+.trending-container{
+    background-color: #f8fcff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgb(190, 203, 212);
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+}
+.trending-pics{
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    object-fit: cover;
+}
+
+.trending-users{
+    display: flex;
+    gap: 10px;
+}
+
+.trending-text{
+    color: black;
 }
